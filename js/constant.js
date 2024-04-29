@@ -3,3 +3,8 @@ const weight = 50;
 const height = 1.55;
 console.log('体重' + weight + 'kg/身長' + height * 100 + 'cmのBIM:');
 console.log(weight/(height*height));
+const bim = window.prompt('bimを入力してください');
+const msg = bim > 25 ? '肥満です' : '肥満ではありません';
+console.log(msg);
+const p_element = document.querySelector('p');
+p_element.textContent = msg;
